@@ -9,12 +9,12 @@ export default function Home() {
           <img
             src="/logo.png"
             alt="FE DIGITAL"
-            className="w-52 mx-auto"
+            className="w-[520px] mx-auto"
           />
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight max-w-5xl">
-          Rollos y cintas para máquinas registradoras
+          Rollos y cintas para impresoras punto de venta
         </h1>
 
         <p className="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl">
@@ -226,7 +226,7 @@ export default function Home() {
             </h3>
 
             <p className="text-gray-600 mt-2">
-              Rollos y cintas para máquinas registradoras
+              Rollos y cintas para impresoras punto de venta
             </p>
           </div>
 

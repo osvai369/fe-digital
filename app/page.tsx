@@ -13,7 +13,7 @@ export default function Home() {
           />
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight max-w-5xl">
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tight max-w-5xl">
           Rollos y cintas para impresoras punto de venta
         </h1>
 

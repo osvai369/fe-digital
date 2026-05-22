@@ -68,17 +68,17 @@ export default function Home() {
             </h3>
 
             <p className="text-gray-600">
-              Ideales para puntos de venta, tickets y comprobantes de compra.
+              Ideales para impresoras puntos de venta, terminales de banco, terminales mercado pago, terminales clip, tickets y comprobantes de compra.
             </p>
           </div>
 
           <div className="border rounded-3xl p-8 hover:shadow-xl transition">
             <h3 className="text-2xl font-semibold mb-4">
-              Rollos Bond
+              Rollos Autocopiantes
             </h3>
 
             <p className="text-gray-600">
-              Compatibles con impresoras tradicionales y sistemas administrativos.
+              Para impresoras de matriz de punto, terminales de punto de venta tradicionales y sistemas administrativos.
             </p>
           </div>
 
@@ -88,7 +88,7 @@ export default function Home() {
             </h3>
 
             <p className="text-gray-600">
-              Cintas de impresión para diferentes modelos de máquinas registradoras.
+              Cintas compatibles para diferentes modelos de impresoras Epson.
             </p>
           </div>
 

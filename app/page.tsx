@@ -1,4 +1,10 @@
-export default function Home() {
+import { incrementAndGetVisits } from "../lib/visit-counter";
+
+export const dynamic = "force-dynamic";
+
+export default async function Home() {
+  const visitCount = await incrementAndGetVisits();
+
   return (
     <main className="bg-white text-gray-900">
 
@@ -228,11 +234,15 @@ export default function Home() {
             <p className="text-gray-600 mt-2">
               Rollos y cintas para impresoras punto de venta
             </p>
+
+            <p className="mt-2 text-sm text-gray-500">
+              Visitas al sitio: {visitCount.toLocaleString("es-MX")}
+            </p>
           </div>
 
           <div className="text-gray-600">
-            <p>+52 1 984 408 8162</p>
-            <p>coraojitos1@hotmail.com</p>
+            <p>+52 984 408 8162</p>
+            <p>jiloma2702cancunyplaya@hotmail.com</p>
           </div>
 
         </div>

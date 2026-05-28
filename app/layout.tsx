@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -27,7 +28,31 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <div className="floating-logo" aria-hidden="true">
+          <Image
+            className="floating-logo__fallback"
+            src="/logo.png"
+            alt=""
+            width={90}
+            height={90}
+            loading="eager"
+            priority
+          />
+          <video
+            className="floating-logo__video"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            poster="/logo.png"
+          >
+            <source src="/logo_animacion.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </body>
     </html>
   );
 }

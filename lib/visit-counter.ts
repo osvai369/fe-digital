@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-const dataDir = path.join(process.cwd(), "data");
+const dataDir = process.env.VERCEL ? "/tmp" : path.join(process.cwd(), "data");
 const counterFile = path.join(dataDir, "visits.txt");
 
 let writeQueue: Promise<number> = Promise.resolve(0);
